@@ -1,17 +1,21 @@
 #!/bin/bash
 
-mvn clean test
+mvn -q clean package
 
-git add -A
-git commit -m "Resolve test"
-git merge step1-test2
+if [ $? -eq 0 ]; then
+  echo git add -A
+  git commit -m "Resolve test"
+  git merge step1-test2
 
-printf '\033[0;32m'
-echo ""
-echo ""
-echo "========================"
-echo "===  STEP 1 - Test 2 ==="
-echo "========================"
-echo ""
-echo ""
+  printf '\033[0;32m'
+  echo ""
+  echo ""
+  echo "========================"
+  echo "===  STEP 1 - Test 2 ==="
+  echo "========================"
+  echo ""
+  echo ""
 printf '\033[0m'
+else
+    echo  "- ❌  There are test failure use ./skip to move forward anyway"
+fi
