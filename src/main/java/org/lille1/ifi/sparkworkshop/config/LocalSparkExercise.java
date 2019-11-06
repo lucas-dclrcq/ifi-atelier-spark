@@ -1,4 +1,4 @@
-package org.lille1.ifi.sparkworkshop;
+package org.lille1.ifi.sparkworkshop.config;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 public class LocalSparkExercise implements AutoCloseable {
     protected JavaSparkContext sparkContext;
-    protected SparkConf sparkConf;
+    private SparkConf sparkConf;
 
     public LocalSparkExercise() {
         // We need to set the log level to warn in order to filter out uninteresting logging from the cluster

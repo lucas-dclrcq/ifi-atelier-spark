@@ -1,6 +1,7 @@
-package org.lille1.ifi.sparkworkshop;
+package org.lille1.ifi.sparkworkshop.exercises.rdd;
 
 import org.apache.spark.api.java.JavaRDD;
+import org.lille1.ifi.sparkworkshop.config.LocalSparkExercise;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class Baby extends LocalSparkExercise {
      * @param doubles
      * @return
      */
-    public Double ex1_calculate_the_total_sum_of_a_list_of_doubles(List<Double> doubles) {
+    public Double ex1(List<Double> doubles) {
         // Transforms the list from above into a Spark RDD
         final JavaRDD<Double> soubleSparkRDD = this.sparkContext.parallelize(doubles);
 
@@ -44,9 +45,7 @@ public class Baby extends LocalSparkExercise {
         final JavaRDD<Double> squareRootRDD = rdd.map(Math::sqrt);
 
         //TODO: Implement a reduce fonction that'll take two doubles and return the sum
-        final Double reduce = squareRootRDD.reduce(Double::sum);
-
-        return reduce;
+        return squareRootRDD.reduce(Double::sum);
     }
 
     /**
@@ -66,9 +65,6 @@ public class Baby extends LocalSparkExercise {
         final JavaRDD<Integer> singleIntegersRDD = squareRootRDD.map(value -> 1);
 
         //TODO: Implement a reduce fonction that'll take two integers and return the sum
-        final Integer reduce = singleIntegersRDD.reduce(Integer::sum);
-
-        // Noice! You implemented a spark function that count your square roots !
-        return reduce;
+        return singleIntegersRDD.reduce(Integer::sum);
     }
 }

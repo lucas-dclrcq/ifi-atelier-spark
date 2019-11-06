@@ -1,4 +1,4 @@
-package rdd;
+package org.lille1.ifi.sparkworkshop.exercises.rdd;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -10,8 +10,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.*;
 
 public class PairRDDTest {
     private SparkConf sparkConf;
