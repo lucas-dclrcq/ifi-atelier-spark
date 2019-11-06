@@ -4,18 +4,17 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
 
 import java.util.Arrays;
 import java.util.List;
 
-public class PairRDDTest {
+class PairRDDTest {
     private SparkConf sparkConf;
     private JavaSparkContext sparkContext;
 
-    @BeforeAll
+    @BeforeEach
     void setup() {
         // We need to set the log level to warn in order to filter out uninteresting logging from the cluster
         Logger.getLogger("org.apache").setLevel(Level.WARN);
@@ -29,7 +28,7 @@ public class PairRDDTest {
         this.sparkContext = new JavaSparkContext(sparkConf);
     }
 
-    @AfterAll
+    @AfterEach
     void close() {
         // Don't forget to close the connection to the cluster after we're done
         this.sparkContext.close();

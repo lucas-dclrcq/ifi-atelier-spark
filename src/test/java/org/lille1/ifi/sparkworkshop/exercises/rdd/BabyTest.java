@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class BabyTest {
+class BabyTest {
     @Test
     void given_a_list_of_doubles_should_calculate_the_total_sum() {
         final List<Double> doubles = Arrays.asList(
@@ -21,7 +21,7 @@ public class BabyTest {
         try (Baby baby = new Baby()) {
             final Double result = Precision.round(baby.ex1(doubles), 12);
             assertThat(result)
-                    .isEqualTo(158.639429999999);
+                    .isEqualTo(158.63943);
         }
     }
 
