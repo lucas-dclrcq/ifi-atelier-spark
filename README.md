@@ -2,39 +2,10 @@
 
 [Slides](https://slides.com/ldclrcq/deck-2)
 
-## Run the workshop
+## Instructions
 
-1. Clone the repository
-2. Execute the init command : `./init`
-3. Answer the questions about :
-    - Team number
-    - Team nickname
-    - Language choice ?
-4. Start coding !!!
-5. When you're satisfied with your work run `./next` to validate the step and go to the next one
+1. Cloner le repository
+2. Lancer le cli et suivre les instructions : `./foreman init`
+3. pour voir votre progression en temps réel, rendez vous sur le [leaderboard](http://spark-leaderboard.hoohoot.org/)
 
-## Setup the Workshop
-
-### Configure the clusters
-
-1. Fork the project
-1. Prepare a necessary amount of Spark Clusters
-1. Add the cluster configurations to the application.yml file
-1. Commit the file to master 
-
-### Setup the leaderboard
-
-## Resources
-
-### Documentation
-
-- Official documentation
-
-### Tooling
-
-- Workshop CLI
-- Leaderboard
-- Twitter Streaming Dashboard
-
-### Thanks
 
