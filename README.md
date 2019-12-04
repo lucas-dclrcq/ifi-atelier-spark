@@ -1,6 +1,6 @@
 # Apache Spark Workshop
 
-[Slides](https://slides.com/ldclrcq/deck-2)
+[Slides](https://view.genial.ly/5de27061d25f9b0f338a2d18/presentation-ifi-apache-spark)
 
 ## Instructions
 
