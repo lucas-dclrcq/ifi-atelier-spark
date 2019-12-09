@@ -105,7 +105,7 @@ public class StepFive extends SQLSparkExercise {
         // TODO: Implémenter le order by par numéro de mois puis par niveau de log
         dataset = null;
 
-        // TODO: Supprimer la colonne "monthnum"
+        // TODO: Supprimer la colonne correspondant au numéro du mois
         // (hint: la fonction drop permet de supprimer une colonne lorsque elle devient inutile)
         dataset = null;
 
