@@ -50,7 +50,7 @@ public class StepThree extends LocalSparkExercise {
         // (hint: the truth lies between the words)
         final JavaRDD<String> words = null;
 
-        // TODO: Utiliser filter pour retirer tous les mots commencant par e
+        // TODO: Utiliser filter pour retirer tous les mots commencant par 'forbiddenWordStart'
         // (hint: duh)
         final JavaRDD<String> filteredWords = null;
 
