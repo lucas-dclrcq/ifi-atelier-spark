@@ -6,6 +6,7 @@ import org.apache.spark.sql.types.DataTypes;
 import org.lille1.ifi.sparkworkshop.config.SQLSparkExercise;
 
 import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 /**
  * STEP SEVEN : User defined functions
@@ -15,8 +16,8 @@ import java.text.SimpleDateFormat;
  * - Les utiliser dans une requète SparkSQL
  */
 public class StepSeven extends SQLSparkExercise {
-    private final static SimpleDateFormat mmmm = new SimpleDateFormat("MMMM");
-    private final static SimpleDateFormat m = new SimpleDateFormat("M");
+    private final static SimpleDateFormat mmmm = new SimpleDateFormat("MMMM", Locale.US);
+    private final static SimpleDateFormat m = new SimpleDateFormat("M", Locale.US);
 
     public Dataset<Row> ex1() {
         Dataset<Row> dataset = spark.read().option("header", true).csv("src/main/resources/data/biglog.txt");
