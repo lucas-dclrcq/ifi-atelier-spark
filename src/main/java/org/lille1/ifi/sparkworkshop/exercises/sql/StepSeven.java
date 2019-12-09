@@ -8,7 +8,7 @@ import org.lille1.ifi.sparkworkshop.config.SQLSparkExercise;
 import java.text.SimpleDateFormat;
 
 /**
- * STEP NINE : User defined functions
+ * STEP SEVEN : User defined functions
  *
  * Ce que tu vas apprendre:
  * - Créer de nouvelles fonctions SparkSQL
