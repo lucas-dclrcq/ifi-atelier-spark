@@ -11,7 +11,8 @@ import static org.apache.spark.sql.functions.*;
 /**
  * STEP 5 : Datasets.
  *
- *
+ * Ce que tu vas apprendre :
+ * - Manipuler une base de données relationnelle grâce à SparkSQL
  */
 public class StepFive extends SQLSparkExercise {
 
