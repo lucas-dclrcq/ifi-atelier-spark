@@ -45,7 +45,7 @@ public class StepFour extends LocalSparkExercise {
         // (hint: utiliser la classe utils CommonWords pour filter les mots communs)
         final JavaRDD<String> uncommonWords = null;
 
-        // TODO: En reprenant le principe du Step3, compter le nombre d'occurence de chaque mot
+        // TODO: En reprenant le principe du StepTwo, compter le nombre d'occurence de chaque mot
         final JavaPairRDD<String, Long> stringLongJavaPairRDD = null;
         final JavaPairRDD<String, Long> wordCounts = null;
 
